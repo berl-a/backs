@@ -1,0 +1,76 @@
+body {
+	background-color: #252525;
+	text-align: center;
+}
+
+h1 {
+	font: 4em Arial, Verdana, sans-serif;
+	margin: 40px auto 30px auto;
+	cursor: default;
+	color: white;
+	text-shadow: 
+		0 0 5px #fafad7,
+		0 0 10px #f7f7c6,
+		0 0 15px #f7f7b2,
+		0 0 25px #fafa99,
+		0 0 30px #fcfc7e,
+		0 0 40px #fafa64,
+		0 0 60px #fcfc46,
+		0 0 80px #f7f731,
+		0 0 100px #f7f71b;
+}
+
+h1 a {
+	text-decoration: none;
+	color: white;
+}
+
+.element {
+	display: inline-block;
+	box-sizing: border-box;
+	margin: 30px;
+	width: 300px;
+	height: 300px;
+}
+
+.element div {
+	position: absolute;
+	box-sizing: border-box;
+	width: 300px;
+	height: 300px;
+	padding: 0;
+/*	background-color: rgba(50, 150, 250, 1);*/
+	background-color: #555;
+	border-radius: 10px;
+	vertical-align: middle;
+	line-height: 180px;
+	text-align: center;
+	font-size: 3em;
+	color: #fff;
+	
+	text-shadow: 0 0 2px #eafcfc, 0 0 5px #d3fcfc, 0 0 10px #bbfcfc, 0 0 15px #a0fafa, 0 0 25px #86f7f7, 0 0 35px #6cf7f7, 0 0 50px #50fafa, 0 0 65px #3bf7f7, 0 0 80px #1efafa;
+	
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	
+	-webkit-transform: perspective(500px) rotateX(0deg);
+	transition: all 1s ease;
+}
+
+.element div p {
+	cursor: default;
+}
+
+.element .back {
+	-webkit-transform: perspective(500px) rotateX(180deg);
+	transition: all 1s ease;
+}
+.element:hover .front {
+	-webkit-transform: perspective(500px) rotateX(-180deg);
+	transition: all 1s ease;
+}
+
+.element:hover .back {
+	-webkit-transform: perspective(500px) rotateX(0deg);
+	transition: all 1s ease;
+}
