@@ -39,7 +39,6 @@ h1 a {
 	width: 300px;
 	height: 300px;
 	padding: 0;
-/*	background-color: rgba(50, 150, 250, 1);*/
 	background-color: #555;
 	border-radius: 10px;
 	vertical-align: middle;
@@ -48,7 +47,16 @@ h1 a {
 	font-size: 3em;
 	color: #fff;
 	
-	text-shadow: 0 0 2px #eafcfc, 0 0 5px #d3fcfc, 0 0 10px #bbfcfc, 0 0 15px #a0fafa, 0 0 25px #86f7f7, 0 0 35px #6cf7f7, 0 0 50px #50fafa, 0 0 65px #3bf7f7, 0 0 80px #1efafa;
+	text-shadow:
+		0 0 2px #eafcfc,
+		0 0 5px #d3fcfc,
+		0 0 10px #bbfcfc,
+		0 0 15px #a0fafa,
+		0 0 25px #86f7f7,
+		0 0 35px #6cf7f7,
+		0 0 50px #50fafa,
+		0 0 65px #3bf7f7,
+		0 0 80px #1efafa;
 	
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -65,6 +73,25 @@ h1 a {
 	-webkit-transform: perspective(500px) rotateX(180deg);
 	transition: all 1s ease;
 }
+.element .back input {
+	outline: 0;
+	position: relative;
+	width: 150px;
+	height: 40px;
+	top: 40px;
+	border: none;
+	box-shadow: 0 1px 1px #444;
+	border-radius: 5px;
+	background-color: #252525;
+	color: white;
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding: 0;
+	text-shadow:
+		1px 1px 3px #6cf7f7;
+}
+
 .element:hover .front {
 	-webkit-transform: perspective(500px) rotateX(-180deg);
 	transition: all 1s ease;
